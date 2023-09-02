@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "dev": "npm run build && rollup --config --watch"
   },
   "author": "sebastianoscarlopez <slopez@dlocal.com>",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "cesium": "^1.109.0"
   },
   "devDependencies": {
+    "@mprt/rollup-plugin-incremental": "^0.1.0",
     "@rollup/plugin-node-resolve": "^15.2.1",
     "postcss": "^8.4.29",
     "rollup-plugin-copy": "^3.5.0",
